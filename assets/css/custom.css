@@ -6,6 +6,7 @@ header{
 }
 #card-sidebar{
   background-color:rgb(144, 208, 255);
+  margin-bottom: 5px;
 }
 #card-body > h5,p{
 }
@@ -89,7 +90,7 @@ header{
 #td-exp,#td-exp1,#td-edu,#td-edu1{
   width: 550px;
   border: none;
-  height: 100px;
+  height: 60px;
 }
 #th-skills{
   border-bottom: 1px;
