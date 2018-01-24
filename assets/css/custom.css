@@ -9,6 +9,21 @@ header{
 }
 #card-body > h5,p{
 }
+.card-title{
+  font-family: Fjalla One;
+}
+.card-text{
+  font-size: 18px;
+  margin-top: -15px;
+  font-family: Abel;
+}
+#hi{
+  font-family:Audiowide;
+}
+#about{
+  font-family: Exo;
+  font-size: 19px;
+}
 #card-footer{
   background-color: white;
 }
@@ -55,17 +70,53 @@ header{
   margin-top: -20px;
   margin-left: 20px;
   text-align: justify;
+  font-family: Exo;
 }
-#table-personal, #table-skills{
+#table-personal, #table-skills, #table-languages,#table-others{
   margin-top: -30px;
 }
 #th-personal,#th-languages,#th-skills{
   height:80px;
+  font-size: 23px;
+  border: none;
 }
 #td-personal,#td-languages, #td-skills{
-  width: 100px;
-  height: 30px;
+  border: none;
 }
 .fa-circle{
-  color:rgb(167, 226, 255);
+  color:rgb(79, 119, 172);
+}
+#td-exp,#td-exp1,#td-edu,#td-edu1{
+  width: 550px;
+  border: none;
+  height: 100px;
+}
+#th-skills{
+  border-bottom: 1px;
+}
+#td-skills{
+  width: 300px;
+  text-align: justify;
+}
+.table-striped > tbody > tr:nth-child(odd) > td {
+   background-color:rgb(105, 178, 219);
+  color: black;
+}
+th{
+  font-family: Changa;
+  font-size: 20px;
+  color:rgb(116, 122, 255);
+}
+h4{
+  font-family: Changa;
+  font-weight: bold;
+  color:rgb(116, 122, 255);
+}
+#td-personal,#td-languages{
+  font-weight: bold;
+}
+#td-personal1,#td-skills,#td-edu,#td-edu1,#td-exp,#td-exp1{
+  font-family: Exo;
+  font-size: 16px;
+  font-weight: lighter;
 }
