@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+    font-family: 'Judson', serif;
+    min-height : 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background: black;
+    height: 50vh;
+    width: auto;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+header ul{
+    color:rgb(153, 153, 153);
+    margin: auto;
+    margin-left: 5%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-shadow: 100rem;
+    background-color:#0000;
+    line-height: 1.4rem;
+    height: 1.4rem;
+    overflow: hidden;
+}
+
+header li {
+    list-style: none;
+    position: relative;
+    top: 0;
+    animation: slide 20s steps(5) infinite;
+}
+
+header li span {
+    position: relative;
+}
+
+header li span::after {
+    content: "|";
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+    left: 0;
+    background: rgb(0, 0, 0);
+    animation: typing 4s steps(30) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin-left : 10px;
+    }
+}
+
+@keyframes slide {
+ 	100% { top: -110px }
+}
+
+.profile {
+    margin: auto;
+}
+
+.footer {
+    bottom: 0;
+    position: static;
+    height:20vh;
+    background: black;
+}

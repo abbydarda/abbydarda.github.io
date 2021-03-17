@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Judson:400,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Judson", serif;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.jumbotron {
+  background-image: url("../img/header.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.text_1 {
+  animation: text1;
+}
+.text_2 {
+  animation: text2;
+}
+.text_3 {
+  animation: text3;
+}
+.text_4 {
+  animation: text4;
+}
+.text_5 {
+  animation: text5;
+}
+
+.text_1,
+.text_2,
+.text_3,
+.text_4,
+.text_5 {
+  font-size: 1.5em;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 20s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+.text_1::after,
+.text_2::after,
+.text_3::after,
+.text_4::after,
+.text_5::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+.bio {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #4f4f4f, #777777, #a2a2a2, #d0d0d0, #ffffff);
+  color: #ffffff;
+}
+
+.frame {
+  height: auto;
+  width: 80vw;
+  background-color: #2e2e2e;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-left: 40px inset #5c5c5c;
+  box-shadow: 5px 6px 0px 0px rgba(0, 0, 0, 0.62);
+}
+
+.frame .title {
+  font-size: 1.5rem;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 500;
+  padding-left: 48px;
+  padding-top: 30px;
+  margin-bottom: -10px;
+}
+
+.frame p {
+  font-size: 1.1rem;
+  text-align: justify;
+  font-family: "Judson", serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  line-height: 2.5em;
+}
+
+.icon {
+  margin-left: -60px;
+  margin-right: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+@keyframes text5 {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    width: 0;
+  }
+
+  85%,
+  95% {
+    width: 6.1em;
+  }
+}
+
+@keyframes text4 {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    width: 0;
+  }
+
+  65%,
+  75% {
+    width: 11.7em;
+  }
+}
+
+@keyframes text3 {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    width: 0;
+  }
+
+  45%,
+  55% {
+    width: 7em;
+  }
+}
+
+@keyframes text2 {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    width: 0;
+  }
+
+  25%,
+  35% {
+    width: 5.3em;
+  }
+}
+@keyframes text1 {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    width: 0;
+  }
+  5%,
+  15% {
+    width: 9em;
+  }
+}
+
+/* @media only screen and (max-width: 600px) {
+  .text_1,
+  .text_2,
+  .text_3,
+  .text_4,
+  .text_5 {
+    font-size: 1.5em;
+  }
+
+  .frame p {
+    font-size: 0.8rem;
+    padding: 0 2.2rem 0 2.2rem !important;
+    text-align: justify;
+    font-family: "Archivo Black", sans-serif;
+  }
+
+  .icon {
+    margin-left: -60px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .frame p {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (min-height: 1024px) {
+  .text_1,
+  .text_2,
+  .text_3,
+  .text_4,
+  .text_5 {
+    font-size: 3em;
+  }
+
+  .frame {
+    border-left: 60px inset #5c5c5c;
+    box-shadow: 5px 6px 0px 0px rgba(0, 0, 0, 0.62);
+  }
+
+  .frame p {
+    font-size: 2rem;
+    padding: 0 3rem 0 3rem !important;
+    text-align: justify;
+    font-family: "Archivo Black", sans-serif;
+  }
+  .frame .title {
+    font-size: 3rem;
+    padding-left: 48px;
+    padding-top: 30px;
+  }
+  .icon {
+    margin-left: -70px;
+    margin-right: 20px;
+  }
+} */
+@media only screen and (min-width: 280px) and (max-width: 360px) {
+  .text_1,
+  .text_2,
+  .text_3,
+  .text_4,
+  .text_5 {
+    font-size: 1rem;
+  }
+
+  .icon {
+    margin-left: -56px;
+    margin-right: 5px;
+  }
+
+  .frame {
+    height: auto;
+    width: 90vw;
+    border-left: 20px inset #5c5c5c;
+  }
+
+  .frame .title {
+    font-size: 1rem;
+    padding-left: 48px;
+    padding-top: 30px;
+    margin-bottom: -10px;
+  }
+
+  .frame p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .text_1,
+  .text_2,
+  .text_3,
+  .text_4,
+  .text_5 {
+    font-size: 1.7rem;
+  }
+
+  .icon {
+    margin-left: -62px;
+    margin-right: 5px;
+  }
+
+  .frame {
+    height: auto;
+    width: 90vw;
+    border-left: 35px inset #5c5c5c;
+  }
+
+  .frame .title {
+    font-size: 1.7rem;
+    padding-left: 48px;
+    padding-top: 30px;
+    margin-bottom: -10px;
+  }
+
+  .frame p {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .text_1,
+  .text_2,
+  .text_3,
+  .text_4,
+  .text_5 {
+    font-size: 2rem;
+  }
+
+  .frame .title {
+    font-size: 2rem;
+  }
+
+  .frame p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .text_1,
+  .text_2,
+  .text_3,
+  .text_4,
+  .text_5 {
+    font-size: 4rem;
+  }
+
+  .frame {
+    height: auto;
+    border-left: 80px inset #5c5c5c;
+  }
+
+  .icon {
+    margin-left: -80px;
+  }
+
+  .frame .title {
+    font-size: 4rem;
+  }
+
+  .frame p {
+    font-size: 3rem;
+  }
+}
